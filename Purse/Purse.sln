@@ -4,8 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purse", "Purse.csproj", "{06732BF2-D85C-4385-854C-97A4035CBA66}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4658F39A-1B02-44B2-ADE3-30544D82047C} = {4658F39A-1B02-44B2-ADE3-30544D82047C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessCard", "..\BusinessCard\BusinessCard.csproj", "{8452F206-8A58-4E06-B9C4-A99DD268688D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCard", "..\CreditCard\CreditCard.csproj", "{4658F39A-1B02-44B2-ADE3-30544D82047C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{8452F206-8A58-4E06-B9C4-A99DD268688D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8452F206-8A58-4E06-B9C4-A99DD268688D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8452F206-8A58-4E06-B9C4-A99DD268688D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4658F39A-1B02-44B2-ADE3-30544D82047C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4658F39A-1B02-44B2-ADE3-30544D82047C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4658F39A-1B02-44B2-ADE3-30544D82047C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4658F39A-1B02-44B2-ADE3-30544D82047C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

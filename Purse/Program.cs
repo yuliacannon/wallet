@@ -1,4 +1,5 @@
 ﻿using BusinessCardLibrary;
+using CreditCardLibrary;
 using System;
 
 namespace Purse
@@ -16,6 +17,8 @@ namespace Purse
     class Purse
     {
         public BusinessCard card = new BusinessCard("Andrew Kowalski", "PLVision", "QA", "andrew.kovalski@plvision.eu");
+        public CreditCard monobank = new CreditCard("Kate Black", 120000, "UAH");
+        public CreditCard privatbank = new CreditCard("Ann Jane", 34000, "USD");
 
         public void ShowAllBusinessCards()
         {
