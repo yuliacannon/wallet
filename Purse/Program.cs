@@ -11,6 +11,14 @@ namespace Purse
             Purse myPurse = new Purse();
 
             myPurse.ShowAllBusinessCards();
+
+            double moneyToAddOrSubstract = 34.56;
+            Console.WriteLine($"\nAdding {moneyToAddOrSubstract} to card: {myPurse.privatbank.CardNumber}");
+            myPurse.AddMoneyToCard(moneyToAddOrSubstract, myPurse.privatbank);
+            Console.WriteLine($"New total: {myPurse.privatbank.Balance} {myPurse.privatbank.Currency}");
+            Console.WriteLine($"\nSubstracting {moneyToAddOrSubstract}");
+            myPurse.SubstractMoneyFromCard(moneyToAddOrSubstract, myPurse.privatbank);
+            Console.WriteLine($"New total: {myPurse.privatbank.Balance} {myPurse.privatbank.Currency}");
         }
     }
 
@@ -24,6 +32,24 @@ namespace Purse
         {
             Console.WriteLine("Business cards in purse:");
             foreach (BusinessCard card in new BusinessCard[] { card })
+            {
+                Console.WriteLine(card.ToString());
+            }
+        }
+        public void AddMoneyToCard(double amountToAdd, CreditCard card)
+        {
+            card.AddMoney(amountToAdd);
+        }
+
+        public void SubstractMoneyFromCard(double amountToSubstract, CreditCard card)
+        {
+            card.SubstractMoney(amountToSubstract);
+        }
+
+        public void ShowAllCreditCards()
+        {
+            Console.WriteLine("Credit cards in purse:");
+            foreach (CreditCard card in new CreditCard[] { monobank, privatbank })
             {
                 Console.WriteLine(card.ToString());
             }
